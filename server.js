@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 app.get('/iframe', (req, res) => {
-    res.setHeader("Content-Security-Policy", "frame-src 'self' '*'");
+    res.setHeader("Content-Security-Policy", "frame-src 'self' ");
     res.send("You win");    
 })
 
